@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Probar la busqueda en Google" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-03-31T15:55:17" hostname="DESKTOP-2533FTU" time="115.959">
+  <properties/>
+  <testcase name="Busco algo en google" classname="Probar la busqueda en Google" time="115.959">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath:  (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-2533FTU', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\fredy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51342}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51342/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a124b4d40289e6c45c105cdb464d8123" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath:  (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-2533FTU', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\fredy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51342}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51342/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a124b4d40289e6c45c105cdb464d8123
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.BasePage.find(BasePage.java:48)
+	at pages.BasePage.getTextFromElement(BasePage.java:120)
+	at pages.GooglePage.firstResult(GooglePage.java:32)
+	at steps.GoogleSteps.validateResults(GoogleSteps.java:28)
+	at ✽.Obtengo resultados(file:///C:/Users/fredy/Documents/CONSITI/SIMAN/src/test/resources/features/Google.feature:8)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 52915
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1648742163.636][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+mar. 31, 2022 9:56:21 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+mar. 31, 2022 9:56:23 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
+mar. 31, 2022 9:56:23 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 97
+]]></system-err>
+</testsuite>
