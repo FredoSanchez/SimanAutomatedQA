@@ -20,7 +20,7 @@ public class BasePage {
     private static Actions action;
 
     static {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\fredy\\Downloads\\programas\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -37,6 +37,10 @@ public class BasePage {
 
     public void goToLinkText(String linkText){
         driver.findElement(By.linkText(linkText)).click();
+    }
+
+    public void clickByClassName(String className){
+        driver.findElement(By.className(className)).click();
     }
 
     public static void cleanBrowser() {
