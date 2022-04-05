@@ -20,7 +20,7 @@ public class BasePage {
     private static Actions action;
 
     static {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\fredy\\Downloads\\programas\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "F:\\chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -50,6 +50,22 @@ public class BasePage {
 
     public void clickElement(String locator){
         find(locator).click();
+    }
+
+    private WebElement findByID(String locator){
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locator)));
+    }
+
+    public void clickElementByID(String locator){
+        findByID(locator).click();
+    }
+
+    private WebElement findByClass(String locator){
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(locator)));
+    }
+
+    public void clickElementByClass(String locator){
+        findByClass(locator).click();
     }
 
     public void write(String locator, String textToWrite){
