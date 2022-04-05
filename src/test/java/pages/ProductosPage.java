@@ -23,10 +23,10 @@ public class ProductosPage extends BasePage{
 
 
         //login steps
-        write(userInput, "fredy_sanchez@grupoconsiti.com");
+        write(userInput, "freddy_sanchez@grupoconsiti.com");
         clickElement(continueButton);
         try {
-            sleep(8000);
+            sleep(20000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
