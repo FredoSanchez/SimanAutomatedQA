@@ -100,9 +100,11 @@ public class ProductosPage extends BasePage {
     public void clickBuyProduct() {
         clickElementByClass(btnBuy);
         clickElementByID("cart-to-orderform");
+
+        writePersonalInfo();
     }
 
-    public void writePersonalInfo() {
+    private void writePersonalInfo() {
         String name = "Carlos   ",
                 input_name = "client-first-name", //Id
                 last_name = "Peñate",
