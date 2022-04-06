@@ -70,10 +70,10 @@ public class ProductosSteps {
         productosPage.clickMeseSinIntereses();
     }
 
-    /*@And("^Elejir (.*)$")
+    @And("^Elejir (.*)$")
     public void elejir(){
         System.out.println("6");
-    }*/
+    }
 
     /*@And("^Elijo (.*) de meses$")
     public void elijoMeses(){

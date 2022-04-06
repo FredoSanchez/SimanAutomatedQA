@@ -8,8 +8,6 @@ public class ProductosPage extends BasePage {
     String menuDropdown = "//body/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/li[1]/div[1]/span[1]/div[1]",
             userInput = "//input[@id='email']",
             continueButton = "//body/div[@id='render-admin.login-legacy.home']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/button[1]",
-            // passwordInput =
-            // "//body/div[@id='render-admin.login-legacy.home']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/label[1]/div[1]/input[1]",
             loginButton = "//body/div[@id='render-admin.login-legacy.home']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/button[1]",
             menuOptions = "/html/body/div[2]/div/div[1]/div/div[3]/div/div[1]/div/div/div/div/div[2]/div/div/li/div[2]/div/section/nav",
             itemBuscar = "vtex-styleguide-9-x-input",
@@ -22,6 +20,12 @@ public class ProductosPage extends BasePage {
             SPOpcion3 = "//li[contains(text(),'3años - $250')]",
             SPOpcion4 = "//li[contains(text(),'4 años - $275')]",
             SPOpcion5 = "//li[contains(text(),'Violeta6Meses - $2.02')]",
+            btnMesesIntereses = "//a[@id='payment-group-custom203PaymentGroupPaymentGroup']",
+            bancoPromerica = "//input[@id='bank1']",
+            bancoCuscatlan = "//input[@id='bank2']",
+            bancoBAC = "//input[@id='bank3']",
+            bancoDavivienda = "//input[@id='bank4']",
+            getMesesInteresesDropdown = "//select[@id='myselectInstallments']",
             forroProducto = "//body/div[2]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/section[1]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/a[1]";
 
     String producto2 = "//*[@id='gallery-layout-container']/div/section/a", // *[@id="gallery-layout-container"]/div/section/a
@@ -132,6 +136,26 @@ public class ProductosPage extends BasePage {
                 clickElement(SPOpcion5);
                 break;
             default:
+
+        }
+    }
+
+    public void elijoBanco(String banco) {
+        switch (banco) {
+            case "Promerica":
+                clickElementByClass(bancoPromerica);
+                break;
+
+            case "Cuscatlan":
+                clickElementByClass(bancoCuscatlan);
+                break;
+
+            case "BAC":
+                clickElement(bancoBAC);
+                break;
+
+            case "Davivienda":
+                clickElement(bancoDavivienda);
                 break;
         }
     }
@@ -175,4 +199,16 @@ public class ProductosPage extends BasePage {
     public void clickMeseSinIntereses() {
         clickElement(selectMothWithOut);
     }
+
+    public void elejirMesesIntereses(String opcion) {
+
+        if (opcion == "1") {
+
+            selectFromDropdownByValue(getMesesInteresesDropdown, "3");
+
+        } else {
+            selectFromDropdownByValue(getMesesInteresesDropdown, "6");
+        }
+    }
+
 }
