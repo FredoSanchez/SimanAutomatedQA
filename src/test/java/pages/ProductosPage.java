@@ -23,7 +23,9 @@ public class ProductosPage extends BasePage {
             SPOpcion3 = "//li[contains(text(),'3años - $250')]",
             SPOpcion4 = "//li[contains(text(),'4 años - $275')]",
             SPOpcion5 = "//li[contains(text(),'Violeta6Meses - $2.02')]",
-            forroProducto = "//body/div[2]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/section[1]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/a[1]";
+            forroProducto = "//body/div[2]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/section[1]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/a[1]",
+            btnBuy = "vtex-button",
+            selectMothWithOut = "//*[@id=\"payment-group-custom203PaymentGroupPaymentGroup\"]";
 
      boolean islogged = false;
 
@@ -95,4 +97,41 @@ public class ProductosPage extends BasePage {
         clickElement(forroProducto);
     }
 
+    public void clickBuyProduct() {
+        clickElementByClass(btnBuy);
+        clickElementByID("cart-to-orderform");
+    }
+
+    public void writePersonalInfo() {
+        String name = "Carlos   ",
+                input_name = "client-first-name", //Id
+                last_name = "Peñate",
+                input_last_name = "client-last-name", //Id
+                phone = "12345678",
+                input_phone = "client-phone", //ID
+                btnGoToTheShipping = "go-to-shipping", //ID
+                state = "//*[@id=\"ship-state\"]",
+                city = "//*[@id=\"ship-city\"]",
+                btnPay = "btn-go-to-payment",
+                enterStreet = "ship-street";
+
+        //Set data
+        writeByID(input_name, name);
+        writeByID(input_last_name, last_name);
+        writeByID(input_phone, phone);
+
+        //Redirect to select city and state
+        clickElementByID(btnGoToTheShipping);
+
+        //Select city and state
+        selectFromDropdownByText(state,  "San Salvador");
+        selectFromDropdownByText(city, "San Salvador");
+        writeByID(enterStreet, "San Salvador");
+
+        clickElementByClass(btnPay);
+    }
+
+    public void clickMeseSinIntereses() {
+        clickElement(selectMothWithOut);
+    }
 }
