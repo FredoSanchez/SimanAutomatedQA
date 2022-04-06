@@ -53,21 +53,21 @@ public class ProductosSteps {
     /*@And("^Selecciono garantia (.*)$")
     public void seleccionarGarantia(){
         System.out.println("2");
-    }
+    }*/
 
     @And("^Doy click al boton comprar$")
     public void botonComprar(){
-        System.out.println("3");
+        productosPage.clickProducto();
     }
 
     @And("^Doy click al boton finalizar compra$")
     public void botonFinalizarCompra(){
-        System.out.println("4");
+        productosPage.clickBuyProduct();
     }
 
     @And("^Elijo metodo de pago meses sin intereses$")
     public void pagoMesesIntereses(){
-        System.out.println("5");
+        productosPage.clickMeseSinIntereses();
     }
 
     /*@And("^Elejir (.*)$")
