@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">58.225s</div>
+<div class="counter">1m1.59s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,14 +76,32 @@
 <a name="Probar metodo de pago meses sin intereses"></a>
 <h3 class="failures">Probar metodo de pago meses sin intereses</h3>
 <span class="code">
-<pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: downshift-4-input (tried for 20 second(s) with 500 milliseconds interval)
+<pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=100.0.4896.75)
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'LUISHEN-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: C:\Users\Luis\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51708}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51708/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 61766d0e459f128c6773dce6fc4ef634
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+Command: [75fb15c1f2f40a5d577e518a6ed3a169, findElement {using=id, value=downshift-2-input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: C:\Users\Luis\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64297/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 75fb15c1f2f40a5d577e518a6ed3a169
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 	at pages.BasePage.findByID(BasePage.java:56)
 	at pages.BasePage.clickElementByID(BasePage.java:60)
 	at pages.ProductosPage.buscarProducto(ProductosPage.java:70)
@@ -105,7 +123,7 @@ Session ID: 61766d0e459f128c6773dce6fc4ef634
 </thead>
 <tr>
 <td class="failures">Probar metodo de pago meses sin intereses</td>
-<td class="failures">58.225s</td>
+<td class="failures">1m1.59s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -116,16 +134,17 @@ Session ID: 61766d0e459f128c6773dce6fc4ef634
 <pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 100.0.4896.20 (f9d71f93d32a6487809d6f35a9670c879fe97dfe-refs/branch-heads/4896@{#203}) on port 51594
+Starting ChromeDriver 100.0.4896.20 (f9d71f93d32a6487809d6f35a9670c879fe97dfe-refs/branch-heads/4896@{#203}) on port 58709
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 05, 2022 5:48:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 06, 2022 7:46:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Apr 05, 2022 5:48:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 06, 2022 7:46:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 100, so returning the closest version found: 97
-Apr 05, 2022 5:48:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Apr 06, 2022 7:46:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 100 of 97
+[1649252847.696][WARNING]: Timed out connecting to Chrome, retrying...
 </pre>
 </span>
 </div>
@@ -137,7 +156,7 @@ INFO: Found CDP implementation for version 100 of 97
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1.1</a> at 05-Apr-2022 17:49:02</p>
+<a href="http://www.gradle.org">Gradle 7.1.1</a> at 06-Apr-2022 07:47:37</p>
 </div>
 </div>
 </body>
