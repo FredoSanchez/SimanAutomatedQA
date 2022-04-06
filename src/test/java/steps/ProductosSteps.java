@@ -31,7 +31,7 @@ public class ProductosSteps {
 
     }
 
-    @And("^Selecciono producto$")
+    @And("^Selecciono producto 1$")
     public void seleccionarProducto(){
 
         productosPage.clickProducto();
