@@ -11,10 +11,10 @@ Feature: Compra de productos
 
   Scenario Outline: Probar metodo de pago meses sin intereses
       When Busco <producto> en siman.com
-      #And Selecciono producto
-      #And Dar click a boton de Siman Pro
-      #And Selecciono garantia <garantia>
-      #And Doy click al boton comprar
+      And Selecciono producto 1
+      And Dar click a boton de Siman Pro
+      And Selecciono garantia <garantia>
+      And Doy click al boton comprar
       #And Doy click al boton finalizar compra
       #And Elijo metodo de pago meses sin intereses
       #And Elejir <banco>
@@ -24,14 +24,14 @@ Feature: Compra de productos
 
     Examples:
       |  producto   | garantia | banco    | cantidad |
-      |464544100006 |opcion 1  |Promerica |     1    |
-      |464544100006 |opcion 1  |Cuscatlan |     2    |
-      |464544100006 |opcion 1  |BAC       |     1    |
-      |464544100006 |opcion 1  |Davivienda|     2    |
+      |464544100006 |opcion 5  |Promerica |     1    |
+      |464544100006 |opcion 5  |Cuscatlan |     2    |
+      |464544100006 |opcion 5  |BAC       |     1    |
+      |464544100006 |opcion 5  |Davivienda|     2    |
 
 #  Scenario Outline: Probar metodo de pago por cuotas
-      #When Busco <producto> en siman.com
-      #And Selecciono producto
+#      When Busco <producto> en siman.com
+#      And Selecciono producto 2
       #And Dar click a boton de Siman Pro
 #    #And Selecciono garantia <garantia>
 #    And Doy click al boton comprar

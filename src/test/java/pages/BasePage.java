@@ -167,4 +167,9 @@ public class BasePage {
     }
 
     public void maxWindow() { driver.manage().window().maximize(); }
+
+    public void darClick(String searchButton){
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("arguments[0].click()", findByClass(searchButton));
+    }
 }

@@ -1,25 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Compra de productos" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-04-06T16:30:36" hostname="DESKTOP-6KEC16J" time="103.485">
+<testsuite name="Compra de productos" tests="5" skipped="0" failures="4" errors="0" timestamp="2022-04-06T21:47:39" hostname="DESKTOP-6KEC16J" time="158.373">
   <properties/>
-  <testcase name="Iniciar sesion" classname="Compra de productos" time="42.487"/>
-  <testcase name="Probar metodo de pago meses sin intereses #1" classname="Compra de productos" time="23.548"/>
-  <testcase name="Probar metodo de pago meses sin intereses #2" classname="Compra de productos" time="14.504"/>
-  <testcase name="Probar metodo de pago meses sin intereses #3" classname="Compra de productos" time="12.336"/>
-  <testcase name="Probar metodo de pago meses sin intereses #4" classname="Compra de productos" time="10.61"/>
+  <testcase name="Iniciar sesion" classname="Compra de productos" time="76.402"/>
+  <testcase name="Probar metodo de pago meses sin intereses #1" classname="Compra de productos" time="27.562">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1197, 738)&#10;  (Session info: chrome=99.0.4844.84)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-6KEC16J', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3fedbaad48c667e41fe17f7306127849, clickElement {id=67611568-76aa-4841-8a4a-960db25cb5e3}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51772/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (3fedbaad48c667e41fe17f7306127849)] -&gt; xpath: /html/body/div[2]/div/div[1]/div/div/div/div[7]/div/div[1]/div/section/div/div/div/div[3]/div/div/div[2]/div/div[8]/div/div/div/div/div/div[2]/div/div/button]&#10;Session ID: 3fedbaad48c667e41fe17f7306127849" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1197, 738)
+  (Session info: chrome=99.0.4844.84)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-6KEC16J', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3fedbaad48c667e41fe17f7306127849, clickElement {id=67611568-76aa-4841-8a4a-960db25cb5e3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51772/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3fedbaad48c667e41fe17f7306127849)] -&gt; xpath: /html/body/div[2]/div/div[1]/div/div/div/div[7]/div/div[1]/div/section/div/div/div/div[3]/div/div/div[2]/div/div[8]/div/div/div/div/div/div[2]/div/div/button]
+Session ID: 3fedbaad48c667e41fe17f7306127849
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at pages.BasePage.clickElement(BasePage.java:49)
+	at pages.ProductosPage.clickBuyProduct(ProductosPage.java:165)
+	at steps.ProductosSteps.botonComprar(ProductosSteps.java:49)
+	at ✽.Doy click al boton comprar(file:///C:/Users/eduar/OneDrive/Escritorio/Grupo%20Consiti/QA/Selenium/SimanAutomatedQA/src/test/resources/features/Productos.feature:17)
+</failure>
+  </testcase>
+  <testcase name="Probar metodo de pago meses sin intereses #2" classname="Compra de productos" time="18.024">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1197, 736)&#10;  (Session info: chrome=99.0.4844.84)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-6KEC16J', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3fedbaad48c667e41fe17f7306127849, clickElement {id=c9895aa9-d132-41cc-ab7f-af7473a71698}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51772/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (3fedbaad48c667e41fe17f7306127849)] -&gt; xpath: /html/body/div[2]/div/div[1]/div/div/div/div[7]/div/div[1]/div/section/div/div/div/div[3]/div/div/div[2]/div/div[8]/div/div/div/div/div/div[2]/div/div/button]&#10;Session ID: 3fedbaad48c667e41fe17f7306127849" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1197, 736)
+  (Session info: chrome=99.0.4844.84)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-6KEC16J', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3fedbaad48c667e41fe17f7306127849, clickElement {id=c9895aa9-d132-41cc-ab7f-af7473a71698}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51772/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3fedbaad48c667e41fe17f7306127849)] -&gt; xpath: /html/body/div[2]/div/div[1]/div/div/div/div[7]/div/div[1]/div/section/div/div/div/div[3]/div/div/div[2]/div/div[8]/div/div/div/div/div/div[2]/div/div/button]
+Session ID: 3fedbaad48c667e41fe17f7306127849
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at pages.BasePage.clickElement(BasePage.java:49)
+	at pages.ProductosPage.clickBuyProduct(ProductosPage.java:165)
+	at steps.ProductosSteps.botonComprar(ProductosSteps.java:49)
+	at ✽.Doy click al boton comprar(file:///C:/Users/eduar/OneDrive/Escritorio/Grupo%20Consiti/QA/Selenium/SimanAutomatedQA/src/test/resources/features/Productos.feature:17)
+</failure>
+  </testcase>
+  <testcase name="Probar metodo de pago meses sin intereses #3" classname="Compra de productos" time="18.144">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1197, 738)&#10;  (Session info: chrome=99.0.4844.84)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-6KEC16J', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3fedbaad48c667e41fe17f7306127849, clickElement {id=80038b9f-cde7-42b1-b32b-6e83f50cf015}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51772/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (3fedbaad48c667e41fe17f7306127849)] -&gt; xpath: /html/body/div[2]/div/div[1]/div/div/div/div[7]/div/div[1]/div/section/div/div/div/div[3]/div/div/div[2]/div/div[8]/div/div/div/div/div/div[2]/div/div/button]&#10;Session ID: 3fedbaad48c667e41fe17f7306127849" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1197, 738)
+  (Session info: chrome=99.0.4844.84)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-6KEC16J', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3fedbaad48c667e41fe17f7306127849, clickElement {id=80038b9f-cde7-42b1-b32b-6e83f50cf015}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51772/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3fedbaad48c667e41fe17f7306127849)] -&gt; xpath: /html/body/div[2]/div/div[1]/div/div/div/div[7]/div/div[1]/div/section/div/div/div/div[3]/div/div/div[2]/div/div[8]/div/div/div/div/div/div[2]/div/div/button]
+Session ID: 3fedbaad48c667e41fe17f7306127849
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at pages.BasePage.clickElement(BasePage.java:49)
+	at pages.ProductosPage.clickBuyProduct(ProductosPage.java:165)
+	at steps.ProductosSteps.botonComprar(ProductosSteps.java:49)
+	at ✽.Doy click al boton comprar(file:///C:/Users/eduar/OneDrive/Escritorio/Grupo%20Consiti/QA/Selenium/SimanAutomatedQA/src/test/resources/features/Productos.feature:17)
+</failure>
+  </testcase>
+  <testcase name="Probar metodo de pago meses sin intereses #4" classname="Compra de productos" time="18.241">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1197, 738)&#10;  (Session info: chrome=99.0.4844.84)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-6KEC16J', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3fedbaad48c667e41fe17f7306127849, clickElement {id=56feab69-a9d9-40a3-9d1a-ff1d342e2d02}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51772/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (3fedbaad48c667e41fe17f7306127849)] -&gt; xpath: /html/body/div[2]/div/div[1]/div/div/div/div[7]/div/div[1]/div/section/div/div/div/div[3]/div/div/div[2]/div/div[8]/div/div/div/div/div/div[2]/div/div/button]&#10;Session ID: 3fedbaad48c667e41fe17f7306127849" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1197, 738)
+  (Session info: chrome=99.0.4844.84)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-6KEC16J', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3fedbaad48c667e41fe17f7306127849, clickElement {id=56feab69-a9d9-40a3-9d1a-ff1d342e2d02}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51772}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51772/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3fedbaad48c667e41fe17f7306127849)] -&gt; xpath: /html/body/div[2]/div/div[1]/div/div/div/div[7]/div/div[1]/div/section/div/div/div/div[3]/div/div/div[2]/div/div[8]/div/div/div/div/div/div[2]/div/div/button]
+Session ID: 3fedbaad48c667e41fe17f7306127849
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at pages.BasePage.clickElement(BasePage.java:49)
+	at pages.ProductosPage.clickBuyProduct(ProductosPage.java:165)
+	at steps.ProductosSteps.botonComprar(ProductosSteps.java:49)
+	at ✽.Doy click al boton comprar(file:///C:/Users/eduar/OneDrive/Escritorio/Grupo%20Consiti/QA/Selenium/SimanAutomatedQA/src/test/resources/features/Productos.feature:17)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 53060
+Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 54741
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1649262639.997][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
-abr. 06, 2022 10:30:42 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-abr. 06, 2022 10:30:43 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
-abr. 06, 2022 10:30:43 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Found CDP implementation for version 99 of 97
+[1649281665.615][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+abr 06, 2022 3:47:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+abr 06, 2022 3:47:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
+abr 06, 2022 3:47:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Found CDP implementation for version 99 of 97
 ]]></system-err>
 </testsuite>

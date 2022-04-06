@@ -31,7 +31,7 @@ public class ProductosPage extends BasePage {
     String producto2 = "//*[@id='gallery-layout-container']/div/section/a", // *[@id="gallery-layout-container"]/div/section/a
             pagoPorCuotas = "//*[@id='payment-group-SerfinsaPaymentGroup']", // *[@id="payment-group-SerfinsaPaymentGroup"]
             botonPRO = "//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[5]/div[2]/button[1]",
-            btnBuy = "vtex-button",
+            btnBuy = "//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]",
             selectMothWithOut = "//*[@id=\"payment-group-custom203PaymentGroupPaymentGroup\"]";
 
     boolean islogged = false;
@@ -68,7 +68,7 @@ public class ProductosPage extends BasePage {
         write(userInput, "alejandro_aragon@grupoconsiti.com");
         clickElement(continueButton);
         try {
-            sleep(30000);
+            sleep(60000);
             clickElement(loginButton);
         } catch (InterruptedException e) {
             e.getMessage();
@@ -161,7 +161,10 @@ public class ProductosPage extends BasePage {
     }
 
     public void clickBuyProduct() {
-        clickElementByClass(btnBuy);
+
+        //clickElement(btnBuy);
+        //clickElementByClass(btnBuy);
+        darClick(btnBuy);
         clickElementByID("cart-to-orderform");
 
         writePersonalInfo();

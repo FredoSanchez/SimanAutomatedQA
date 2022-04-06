@@ -38,26 +38,15 @@ public class ProductosSteps {
 
     }
 
-   /* @And("^Selecciono producto$")
-    public void seleccionarProducto(){
-
-        productosPage.clickProducto();
-
-    }
-
     @And("^Dar click a boton de Siman Pro$")
-    public void botonSimanPro(){
-        System.out.println("1");
+    public void simanPro(){
+        productosPage.clickSimanPro();
     }
 
-    /*@And("^Selecciono garantia (.*)$")
-    public void seleccionarGarantia(){
-        System.out.println("2");
-    }*/
 
     @And("^Doy click al boton comprar$")
     public void botonComprar(){
-        productosPage.clickProducto();
+        productosPage.clickBuyProduct();
     }
 
     @And("^Doy click al boton finalizar compra$")
@@ -75,25 +64,7 @@ public class ProductosSteps {
         System.out.println("6");
     }
 
-    /*@And("^Elijo (.*) de meses$")
-    public void elijoMeses(){
-        System.out.println("7");
-    }
 
-    @And("^Doy click al boton de comprar ahora$")
-    public void botonComprarAhora(){
-        System.out.println("8");
-    }
-
-    @Then("^Producto fue comprado exitosamente$")
-    public void productoComprado(){
-        System.out.println("9");
-    }
-
-    @And("^Elijo metodo de pago por cuotas$")
-    public void pagoCuotas(){
-        System.out.println("10");
-    }*/
 
     @And("^Selecciono garantia (.*)$")
     public void seleccionarGarantia(String opcion){
