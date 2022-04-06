@@ -24,6 +24,9 @@ public class ProductosPage extends BasePage {
             SPOpcion4 = "//li[contains(text(),'4 años - $275')]",
             SPOpcion5 = "//li[contains(text(),'Violeta6Meses - $2.02')]",
             forroProducto = "//body/div[2]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/section[1]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/a[1]";
+    
+    String producto2 = "//*[@id='gallery-layout-container']/div/section/a", //*[@id="gallery-layout-container"]/div/section/a
+            pagoPorCuotas = "//*[@id='payment-group-SerfinsaPaymentGroup']"; //*[@id="payment-group-SerfinsaPaymentGroup"]
 
      boolean islogged = false;
 
@@ -95,4 +98,11 @@ public class ProductosPage extends BasePage {
         clickElement(forroProducto);
     }
 
+    public void clickProducto2() {
+        clickElement(producto2);
+    }
+
+    public void clickPagoPorCuotas(){
+        clickElement(pagoPorCuotas);
+    }
 }
