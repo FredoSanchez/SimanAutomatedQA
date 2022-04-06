@@ -26,7 +26,8 @@ public class ProductosPage extends BasePage {
             forroProducto = "//body/div[2]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/section[1]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/a[1]";
     
     String producto2 = "//*[@id='gallery-layout-container']/div/section/a", //*[@id="gallery-layout-container"]/div/section/a
-            pagoPorCuotas = "//*[@id='payment-group-SerfinsaPaymentGroup']"; //*[@id="payment-group-SerfinsaPaymentGroup"]
+            pagoPorCuotas = "//*[@id='payment-group-SerfinsaPaymentGroup']", //*[@id="payment-group-SerfinsaPaymentGroup"]
+            botonPRO = "//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[5]/div[2]/button[1]";
 
      boolean islogged = false;
 
@@ -102,7 +103,35 @@ public class ProductosPage extends BasePage {
         clickElement(producto2);
     }
 
+    public void clickSimanPro() {
+        clickElement(botonPRO);
+    }
+
     public void clickPagoPorCuotas(){
         clickElement(pagoPorCuotas);
+    }
+
+    public void seleccionarGarantia(String opcion){
+        clickElement(SPDropdown);
+
+        switch (opcion){
+            case "opcion 1":
+                clickElement(SPOpcion1);
+                break;
+            case "opcion 2":
+                clickElement(SPOpcion2);
+                break;
+            case "opcion 3":
+                clickElement(SPOpcion3);
+                break;
+            case "opcion 4":
+                clickElement(SPOpcion4);
+                break;
+            case "opcion 5":
+                clickElement(SPOpcion5);
+                break;
+            default:
+                break;
+        }
     }
 }

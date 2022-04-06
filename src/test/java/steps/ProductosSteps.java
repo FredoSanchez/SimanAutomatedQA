@@ -31,6 +31,12 @@ public class ProductosSteps {
 
     }
 
+    @And("^Selecciono producto$")
+    public void seleccionarProducto(){
+
+        productosPage.clickProducto();
+
+    }
 
    /* @And("^Selecciono producto$")
     public void seleccionarProducto(){
@@ -88,6 +94,11 @@ public class ProductosSteps {
     public void pagoCuotas(){
         System.out.println("10");
     }*/
+
+    @And("^Selecciono garantia (.*)$")
+    public void seleccionarGarantia(String opcion){
+        productosPage.seleccionarGarantia(opcion);
+    }
 
     @And("^Selecciono producto 2$")
     public void seleccionarProducto2(){
