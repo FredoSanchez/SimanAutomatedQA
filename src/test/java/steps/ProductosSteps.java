@@ -64,10 +64,10 @@ public class ProductosSteps {
         System.out.println("5");
     }
 
-    /*@And("^Elejir (.*)$")
+    @And("^Elejir (.*)$")
     public void elejir(){
         System.out.println("6");
-    }*/
+    }
 
     /*@And("^Elijo (.*) de meses$")
     public void elijoMeses(){
