@@ -1,54 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Compra de productos" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-04-06T13:46:34" hostname="LUISHEN-PC" time="61.593">
+<testsuite name="Compra de productos" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-04-06T16:30:36" hostname="DESKTOP-6KEC16J" time="103.485">
   <properties/>
-  <testcase name="Probar metodo de pago meses sin intereses" classname="Compra de productos" time="61.593">
-    <failure message="org.openqa.selenium.WebDriverException: chrome not reachable&#10;  (Session info: chrome=100.0.4896.75)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'LUISHEN-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [75fb15c1f2f40a5d577e518a6ed3a169, findElement {using=id, value=downshift-2-input}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: C:\Users\Luis\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64297/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 75fb15c1f2f40a5d577e518a6ed3a169" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=100.0.4896.75)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'LUISHEN-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [75fb15c1f2f40a5d577e518a6ed3a169, findElement {using=id, value=downshift-2-input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: C:\Users\Luis\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64297/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 75fb15c1f2f40a5d577e518a6ed3a169
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at pages.BasePage.findByID(BasePage.java:56)
-	at pages.BasePage.clickElementByID(BasePage.java:60)
-	at pages.ProductosPage.buscarProducto(ProductosPage.java:70)
-	at steps.ProductosSteps.buscarProductoSiman(ProductosSteps.java:20)
-	at ✽.Busco producto en siman.com(file:///E:/Consiti/SimanAutomatedQA/src/test/resources/features/Productos.feature:7)
-</failure>
-  </testcase>
+  <testcase name="Iniciar sesion" classname="Compra de productos" time="42.487"/>
+  <testcase name="Probar metodo de pago meses sin intereses #1" classname="Compra de productos" time="23.548"/>
+  <testcase name="Probar metodo de pago meses sin intereses #2" classname="Compra de productos" time="14.504"/>
+  <testcase name="Probar metodo de pago meses sin intereses #3" classname="Compra de productos" time="12.336"/>
+  <testcase name="Probar metodo de pago meses sin intereses #4" classname="Compra de productos" time="10.61"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 100.0.4896.20 (f9d71f93d32a6487809d6f35a9670c879fe97dfe-refs/branch-heads/4896@{#203}) on port 58709
+Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 53060
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 06, 2022 7:46:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1649262639.997][WARNING]: This version of ChromeDriver has not been tested with Chrome version 99.
+abr. 06, 2022 10:30:42 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Apr 06, 2022 7:46:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 100, so returning the closest version found: 97
-Apr 06, 2022 7:46:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Found CDP implementation for version 100 of 97
-[1649252847.696][WARNING]: Timed out connecting to Chrome, retrying...
+abr. 06, 2022 10:30:43 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
+abr. 06, 2022 10:30:43 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 97
 ]]></system-err>
 </testsuite>

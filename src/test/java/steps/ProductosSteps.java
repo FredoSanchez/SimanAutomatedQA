@@ -14,10 +14,20 @@ public class ProductosSteps {
         productosPage.navigateToSiman();
     }
 
-    @When("^Busco producto en siman.com$")
-    public void buscarProductoSiman(){
+    @When("^Busco (.*) en siman.com$")
+    public void buscarProductoSiman(String producto){
 
-        productosPage.buscarProducto();
+        productosPage.buscarProducto(producto);
+
+    }
+
+    @And("^Inicio sesion en siman.com$")
+    public void iniciarSesion(){
+        productosPage.iniciarSesion();
+    }
+
+    @Then("^Inicio sesion correctamente$")
+    public void sesionCorrecta(){
 
     }
 

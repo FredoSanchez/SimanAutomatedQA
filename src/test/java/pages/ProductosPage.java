@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 import static java.lang.Thread.sleep;
@@ -13,8 +14,8 @@ public class ProductosPage extends BasePage {
     //passwordInput = "//body/div[@id='render-admin.login-legacy.home']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/label[1]/div[1]/input[1]",
     loginButton = "//body/div[@id='render-admin.login-legacy.home']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/button[1]",
             menuOptions = "/html/body/div[2]/div/div[1]/div/div[3]/div/div[1]/div/div/div/div/div[2]/div/div/li/div[2]/div/section/nav",
-            itemBuscar = "downshift-2-input",
-            iteLupa = "//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]/span[1]/div[1]/button[1]",
+            itemBuscar = "vtex-styleguide-9-x-input",
+           // iteLupa = "//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]/span[1]/div[1]/button[1]",
             seleccionarProducto = "//body/div[2]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/section[1]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/a[1]",
             SPDropdown = "//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[5]/div[3]/div[2]/div[2]/div[1]/div[1]",
             SPOpcion1 = "//li[contains(text(),'1año - $200')]",
@@ -24,7 +25,7 @@ public class ProductosPage extends BasePage {
             SPOpcion5 = "//li[contains(text(),'Violeta6Meses - $2.02')]",
             forroProducto = "//body/div[2]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/section[1]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/section[1]/a[1]";
 
-    boolean islogged = false;
+     boolean islogged = false;
 
     public ProductosPage() {
         super(driver);
@@ -33,7 +34,7 @@ public class ProductosPage extends BasePage {
     public void navigateToSiman() {
         navigateTo("https://simanqa.myvtex.com/");
 
-        if (!islogged) {
+       /* try {
             //login steps
             write(userInput, "alejandro_aragon@grupoconsiti.com");
             clickElement(continueButton);
@@ -45,7 +46,25 @@ public class ProductosPage extends BasePage {
             }
             islogged = true;
             //write(passwordInput, "QAConsiti2022#");
+        }catch (NoSuchElementException e) {
+            System.out.println("The WebElement Search Field couldn't be found");
+            e.printStackTrace();
+        }*/
+
+
+
+    }
+
+    public void iniciarSesion(){
+        write(userInput, "alejandro_aragon@grupoconsiti.com");
+        clickElement(continueButton);
+        try {
+            sleep(30000);
+            clickElement(loginButton);
+        } catch (InterruptedException e) {
+            e.getMessage();
         }
+
     }
 
     public void clickCategoriesMenu() {
@@ -56,10 +75,10 @@ public class ProductosPage extends BasePage {
         return elementIsDisplayed(menuOptions);
     }
 
-    public void buscarProducto() {
+    public void buscarProducto(String producto) {
         try {
             Thread.sleep(3000);
-            clickElementByID(itemBuscar);
+            clickElementByClass(itemBuscar);
 
             //clickElement("/html/body/div[2]/div/div[1]/div/div[2]/div[2]/div/svg/path[2]");
             Thread.sleep(2000);
@@ -67,8 +86,8 @@ public class ProductosPage extends BasePage {
             e.printStackTrace();
         }
 
-        writeByID(itemBuscar, "464544100006");
-        clickElement(iteLupa);
+        writeByClass(itemBuscar, producto);
+       // clickElement(iteLupa);
 
     }
 
