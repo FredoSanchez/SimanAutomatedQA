@@ -88,4 +88,14 @@ public class ProductosSteps {
     public void pagoCuotas(){
         System.out.println("10");
     }*/
+
+    @And("^Selecciono producto 2$")
+    public void seleccionarProducto2(){
+        productosPage.clickProducto2();
+    }
+
+    @And("^Elijo metodo de pago por cuotas$")
+    public void pagoCuotas() {
+        productosPage.clickPagoPorCuotas();
+    }
 }
