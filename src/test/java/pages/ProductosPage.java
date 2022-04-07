@@ -31,7 +31,7 @@ public class ProductosPage extends BasePage {
     String producto2 = "//*[@id='gallery-layout-container']/div/section/a", // *[@id="gallery-layout-container"]/div/section/a
             pagoPorCuotas = "//*[@id='payment-group-SerfinsaPaymentGroup']", // *[@id="payment-group-SerfinsaPaymentGroup"]
             botonPRO = "//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[5]/div[2]/button[1]",
-            btnBuy = "//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[8]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]",
+            btnBuy = "/html/body/div[2]/div/div[1]/div/div/div/div[7]/div/div[1]/div/section/div/div/div/div[3]/div/div/div[2]/div/div[8]/div/div/div/div/div/div[2]/div/div/button",
             selectMothWithOut = "//*[@id=\"payment-group-custom203PaymentGroupPaymentGroup\"]";
 
     boolean islogged = false;
@@ -162,10 +162,22 @@ public class ProductosPage extends BasePage {
 
     public void clickBuyProduct() {
 
-        //clickElement(btnBuy);
-        //clickElementByClass(btnBuy);
-        darClick(btnBuy);
+        clickElement(btnBuy);
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         clickElementByID("cart-to-orderform");
+
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        clickElementByID("client-pre-email");
+        writeByID("client-pre-email", "alejandro_aragon@grupoconsiti.com");
 
         writePersonalInfo();
     }
