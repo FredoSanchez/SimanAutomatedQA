@@ -34,7 +34,7 @@ public class ProductosPage extends BasePage {
             btnBuy = "body.bg-base:nth-child(2) div.render-container.render-route-store-product:nth-child(2) div.render-provider div.vtex-store__template.bg-base div.flex.flex-column.min-vh-100.w-100 div.vtex-product-context-provider div.flex.flex-column.min-vh-100.w-100 div.flex.flex-grow-1.w-100.flex-column div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--pag-default section.vtex-store-components-3-x-container.ph3.ph5-m.ph2-xl.mw9.center div.flex.mt0.mb0.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--pag-default.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--pag-default.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--pag-default.pb0:nth-child(3) div.vtex-flex-layout-0-x-flexRow div.flex.mt4.mb7.pt0.pb7.justify-start.vtex-flex-layout-0-x-flexRowContent.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--pdp-right-col.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--pdp-right-col.pb0:nth-child(8) div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--navigation-comprar.vtex-flex-layout-0-x-flexRow--pdp-estructuraM div.flex.mt0.mb0.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--navigation-comprar.vtex-flex-layout-0-x-flexRowContent--pdp-estructuraM.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--row-two-buttons div.flex.mt4.mb4.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--row-two-buttons.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--buy-button-two.vtex-flex-layout-0-x-flexCol--pdp-estructuraM.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--buy-button-two.vtex-flex-layout-0-x-flexColChild--pdp-estructuraM.pb0 > button.vtex-button.bw1.ba.fw5.v-mid.relative.pa0.lh-solid.br2.min-h-regular.t-action.bg-action-primary.b--action-primary.c-on-action-primary.hover-bg-action-primary.hover-b--action-primary.hover-c-on-action-primary.pointer.w-100",
             selectMothWithOut = "//*[@id=\"payment-group-custom203PaymentGroupPaymentGroup\"]",
             mensajeExito = "//h4[contains(text(),'¡Gracias por la compra!')]",
-            btnComprarAhora = "//body/div[4]/div[3]/div[2]/div[2]/div[1]/div[3]/p[1]/button[3]";
+            btnComprarAhora = "/html/body/div[4]/div[3]/div[2]/div[2]/div/div[3]/p/button[3]";
 
     boolean islogged = false;
 
@@ -67,7 +67,7 @@ public class ProductosPage extends BasePage {
     }
 
     public void iniciarSesion() {
-        write(userInput, "freddy_sanchez@grupoconsiti.com");
+        write(userInput, "alejandro_aragon@grupoconsiti.com");
         clickElement(continueButton);
         try {
             sleep(60000);
@@ -111,6 +111,7 @@ public class ProductosPage extends BasePage {
     }
 
     public void clickSimanPro() {
+
         clickElement(botonPRO);
     }
 
@@ -119,6 +120,12 @@ public class ProductosPage extends BasePage {
     }
 
     public void seleccionarGarantia(String opcion) {
+
+        scrollDouwnMin();
+        scrollDouwnMin();
+        scrollDouwnMin();
+        scrollDouwnMin();
+
         clickElement(SPDropdown);
 
         switch (opcion) {
@@ -188,7 +195,7 @@ public class ProductosPage extends BasePage {
             e.printStackTrace();
         }
 
-        clickElementByID("client-pre-email");
+      //  clickElementByID("client-pre-email");
         writeByID("client-pre-email", "alejandro_aragon@grupoconsiti.com");
         clickElementByID("btn-client-pre-email");
 
@@ -197,11 +204,14 @@ public class ProductosPage extends BasePage {
         }catch (InterruptedException e){
             e.printStackTrace();
         }
-        writePersonalInfo();
+       // writePersonalInfo();
 
     }
 
     public void clickBuyProduct() {
+        for(int i = 0; i <= 10 ; i++){
+            scrollDouwnMin();
+        }
 
         clickElementByCSS(btnBuy);
     }

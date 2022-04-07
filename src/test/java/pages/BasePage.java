@@ -38,6 +38,12 @@ public class BasePage {
 
     }
 
+    public void scrollDouwnMin(){
+
+        find("/html/body").sendKeys(Keys.DOWN);
+
+
+    }
 
 
     public static void navigateTo(String url){
