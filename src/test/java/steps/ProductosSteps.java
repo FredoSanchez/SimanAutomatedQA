@@ -60,11 +60,15 @@ public class ProductosSteps {
     }
 
     @And("^Elejir (.*)$")
-    public void elejir(){
-        System.out.println("6");
+    public void elejirBanco(String banco){
+
+        productosPage.elijoBanco(banco);
     }
 
-
+    @And("^Elijo (.*) de meses$")
+    public void elijoMeses(String meses){
+        productosPage.elejirMesesIntereses(meses);
+    }
 
     @And("^Selecciono garantia (.*)$")
     public void seleccionarGarantia(String opcion){

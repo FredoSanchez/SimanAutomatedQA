@@ -17,7 +17,7 @@ public class BasePage {
     private static Actions action;
 
     static {
-        System.setProperty("webdriver.chrome.driver", "F:\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -27,6 +27,18 @@ public class BasePage {
         BasePage.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
+
+    public void scrollDouwn(){
+        //JavascriptExecutor js = (JavascriptExecutor)driver;
+        //js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+        //js.executeScript("arguments[0].scrollIntoView();", Element);
+
+        find("/html/body").sendKeys(Keys.SPACE);
+
+
+    }
+
+
 
     public static void navigateTo(String url){
         driver.get(url);

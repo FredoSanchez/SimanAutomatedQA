@@ -138,6 +138,15 @@ public class ProductosPage extends BasePage {
             default:
 
         }
+
+        try{
+            Thread.sleep(10000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
+        scrollDouwn();
+
     }
 
     public void elijoBanco(String banco) {
@@ -162,6 +171,7 @@ public class ProductosPage extends BasePage {
 
     public void clickBuyProduct() {
 
+
         clickElement(btnBuy);
         try {
             Thread.sleep(4000);
@@ -178,14 +188,20 @@ public class ProductosPage extends BasePage {
 
         clickElementByID("client-pre-email");
         writeByID("client-pre-email", "alejandro_aragon@grupoconsiti.com");
+        clickElementByID("btn-client-pre-email");
 
+        try{
+            Thread.sleep(60000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
         writePersonalInfo();
     }
 
     private void writePersonalInfo() {
         String name = "Carlos   ",
                 input_name = "client-first-name", // Id
-                last_name = "Peñate",
+                last_name = "Mecate",
                 input_last_name = "client-last-name", // Id
                 phone = "12345678",
                 input_phone = "client-phone", // ID
@@ -202,6 +218,13 @@ public class ProductosPage extends BasePage {
 
         // Redirect to select city and state
         clickElementByID(btnGoToTheShipping);
+
+        try{
+            Thread.sleep(20000);
+        }catch (InterruptedException e)
+        {
+            e.printStackTrace();
+        }
 
         // Select city and state
         selectFromDropdownByText(state, "San Salvador");
