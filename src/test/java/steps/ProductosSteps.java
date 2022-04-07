@@ -51,7 +51,7 @@ public class ProductosSteps {
 
     @And("^Doy click al boton finalizar compra$")
     public void botonFinalizarCompra(){
-        productosPage.clickBuyProduct();
+        productosPage.clickFinalizarCompra();
     }
 
     @And("^Elijo metodo de pago meses sin intereses$")
@@ -63,6 +63,11 @@ public class ProductosSteps {
     public void elejirBanco(String banco){
 
         productosPage.elijoBanco(banco);
+    }
+
+    @And("^Doy click a proceder a pagar$")
+    public void procederPagar(){
+        productosPage.procederPagar();
     }
 
     @And("^Elijo (.*) de meses$")
@@ -84,4 +89,5 @@ public class ProductosSteps {
     public void pagoCuotas() {
         productosPage.clickPagoPorCuotas();
     }
+
 }

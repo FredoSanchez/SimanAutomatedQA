@@ -15,8 +15,9 @@ Feature: Compra de productos
       And Dar click a boton de Siman Pro
       And Selecciono garantia <garantia>
       And Doy click al boton comprar
-      #And Doy click al boton finalizar compra
-      #And Elijo metodo de pago meses sin intereses
+      And Doy click al boton finalizar compra
+      And Doy click a proceder a pagar
+      And Elijo metodo de pago meses sin intereses
       #And Elejir <banco>
       #And Elijo <cantidad> de meses
       #And Doy click al boton de comprar ahora

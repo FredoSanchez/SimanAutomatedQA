@@ -132,6 +132,14 @@ public class BasePage {
         find(cellToFill).sendKeys(stringToSend);
     }
 
+    private WebElement findByCSS(String locator){
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locator)));
+    }
+
+    public void clickElementByCSS(String locator){
+        findByCSS(locator).click();
+    }
+
     public void switchToiFrame(int iFrameIndex){
 
         //Para no tener problemas con el id o el name de donde está situado el fram
