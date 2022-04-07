@@ -18,14 +18,14 @@ Feature: Compra de productos
       And Doy click al boton finalizar compra
       And Doy click a proceder a pagar
       And Elijo metodo de pago meses sin intereses
-      #And Elejir <banco>
-      #And Elijo <cantidad> de meses
-      #And Doy click al boton de comprar ahora
-      #Then Producto fue comprado exitosamente
+      And Elejir <banco>
+      And Elijo <cantidad> de meses
+      And Doy click al boton de comprar ahora
+      Then Producto fue comprado exitosamente
 
     Examples:
       |  producto   | garantia | banco    | cantidad |
-      |464544100006 |opcion 5  |Promerica |     1    |
+      |464544100006 |opcion 5  |BAC       |     2    |
       |464544100006 |opcion 5  |Cuscatlan |     2    |
       |464544100006 |opcion 5  |BAC       |     1    |
       |464544100006 |opcion 5  |Davivienda|     2    |

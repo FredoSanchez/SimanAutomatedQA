@@ -90,4 +90,14 @@ public class ProductosSteps {
         productosPage.clickPagoPorCuotas();
     }
 
+    @And("^Doy click al boton de comprar ahora$")
+    public void comprarAhora(){
+        productosPage.comprarAhora();
+    }
+
+    @Then("^Producto fue comprado exitosamente$")
+    public void forroExitoso(){
+        Assert.assertEquals(true, productosPage.compraExitosa());
+    }
+
 }
