@@ -97,7 +97,7 @@ public class ProductosSteps {
 
     @Then("^Producto fue comprado exitosamente$")
     public void forroExitoso(){
-       // Assert.assertEquals(true, productosPage.compraExitosa());
+        Assert.assertEquals(true, productosPage.compraExitosa().contains("Gracias por la compra"));
     }
 
 }

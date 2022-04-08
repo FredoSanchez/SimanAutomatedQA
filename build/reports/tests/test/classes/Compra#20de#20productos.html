@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">5</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">4</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3m36.57s</div>
+<div class="counter">4m27.48s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">20%</div>
+<div class="percent">50%</div>
 <p>successful</p>
 </div>
 </td>
@@ -73,110 +73,22 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="Probar metodo de pago por cuotas #1"></a>
-<h3 class="failures">Probar metodo de pago por cuotas #1</h3>
+<a name="Probar metodo de pago por cuotas"></a>
+<h3 class="failures">Probar metodo de pago por cuotas</h3>
 <span class="code">
-<pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1197, 821)
-  (Session info: chrome=100.0.4896.75)
+<pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: client-pre-email (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'DESKTOP-6KEC16J', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d0aff37978d370eede26e699d069f69, clickElement {id=d0bd1004-489e-427c-97a2-44923e947807}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52814/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (7d0aff37978d370eede26e699d069f69)] -&gt; css selector: body.bg-base:nth-child(2) div.render-container.render-route-store-product:nth-child(2) div.render-provider div.vtex-store__template.bg-base div.flex.flex-column.min-vh-100.w-100 div.vtex-product-context-provider div.flex.flex-column.min-vh-100.w-100 div.flex.flex-grow-1.w-100.flex-column div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--pag-default section.vtex-store-components-3-x-container.ph3.ph5-m.ph2-xl.mw9.center div.flex.mt0.mb0.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--pag-default.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--pag-default.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--pag-default.pb0:nth-child(3) div.vtex-flex-layout-0-x-flexRow div.flex.mt4.mb7.pt0.pb7.justify-start.vtex-flex-layout-0-x-flexRowContent.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--pdp-right-col.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--pdp-right-col.pb0:nth-child(8) div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--navigation-comprar.vtex-flex-layout-0-x-flexRow--pdp-estructuraM div.flex.mt0.mb0.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--navigation-comprar.vtex-flex-layout-0-x-flexRowContent--pdp-estructuraM.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--row-two-buttons div.flex.mt4.mb4.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--row-two-buttons.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--buy-button-two.vtex-flex-layout-0-x-flexCol--pdp-estructuraM.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--buy-button-two.vtex-flex-layout-0-x-flexColChild--pdp-estructuraM.pb0 &gt; button.vtex-button.bw1.ba.fw5.v-mid.relative.pa0.lh-solid.br2.min-h-regular.t-action.bg-action-primary.b--action-primary.c-on-action-primary.hover-bg-action-primary.hover-b--action-primary.hover-c-on-action-primary.pointer.w-100]
-Session ID: 7d0aff37978d370eede26e699d069f69
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.BasePage.clickElementByCSS(BasePage.java:146)
-	at pages.ProductosPage.clickBuyProduct(ProductosPage.java:216)
-	at steps.ProductosSteps.botonComprar(ProductosSteps.java:49)
-	at ✽.Doy click al boton comprar(file:///C:/Users/eduar/OneDrive/Escritorio/Grupo%20Consiti/QA/Selenium/SimanAutomatedQA/src/test/resources/features/Productos.feature:42)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="Probar metodo de pago por cuotas #2"></a>
-<h3 class="failures">Probar metodo de pago por cuotas #2</h3>
-<span class="code">
-<pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='payment-group-SerfinsaPaymentGroup'] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-6KEC16J', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52814/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d0aff37978d370eede26e699d069f69
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64608}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64608/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 672428612e581cdd04e719dfcfe1b75e
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at pages.BasePage.find(BasePage.java:63)
-	at pages.BasePage.clickElement(BasePage.java:67)
-	at pages.ProductosPage.clickPagoPorCuotas(ProductosPage.java:119)
-	at steps.ProductosSteps.pagoCuotas(ProductosSteps.java:90)
-	at ✽.Elijo metodo de pago por cuotas(file:///C:/Users/eduar/OneDrive/Escritorio/Grupo%20Consiti/QA/Selenium/SimanAutomatedQA/src/test/resources/features/Productos.feature:44)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="Probar metodo de pago por cuotas #3"></a>
-<h3 class="failures">Probar metodo de pago por cuotas #3</h3>
-<span class="code">
-<pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1197, 721)
-  (Session info: chrome=100.0.4896.75)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-6KEC16J', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d0aff37978d370eede26e699d069f69, clickElement {id=f82c0a82-6f48-4227-bdd0-63758c73783c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52814/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (7d0aff37978d370eede26e699d069f69)] -&gt; css selector: body.bg-base:nth-child(2) div.render-container.render-route-store-product:nth-child(2) div.render-provider div.vtex-store__template.bg-base div.flex.flex-column.min-vh-100.w-100 div.vtex-product-context-provider div.flex.flex-column.min-vh-100.w-100 div.flex.flex-grow-1.w-100.flex-column div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--pag-default section.vtex-store-components-3-x-container.ph3.ph5-m.ph2-xl.mw9.center div.flex.mt0.mb0.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--pag-default.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--pag-default.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--pag-default.pb0:nth-child(3) div.vtex-flex-layout-0-x-flexRow div.flex.mt4.mb7.pt0.pb7.justify-start.vtex-flex-layout-0-x-flexRowContent.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--pdp-right-col.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--pdp-right-col.pb0:nth-child(8) div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--navigation-comprar.vtex-flex-layout-0-x-flexRow--pdp-estructuraM div.flex.mt0.mb0.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--navigation-comprar.vtex-flex-layout-0-x-flexRowContent--pdp-estructuraM.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--row-two-buttons div.flex.mt4.mb4.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--row-two-buttons.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--buy-button-two.vtex-flex-layout-0-x-flexCol--pdp-estructuraM.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--buy-button-two.vtex-flex-layout-0-x-flexColChild--pdp-estructuraM.pb0 &gt; button.vtex-button.bw1.ba.fw5.v-mid.relative.pa0.lh-solid.br2.min-h-regular.t-action.bg-action-primary.b--action-primary.c-on-action-primary.hover-bg-action-primary.hover-b--action-primary.hover-c-on-action-primary.pointer.w-100]
-Session ID: 7d0aff37978d370eede26e699d069f69
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.BasePage.clickElementByCSS(BasePage.java:146)
-	at pages.ProductosPage.clickBuyProduct(ProductosPage.java:216)
-	at steps.ProductosSteps.botonComprar(ProductosSteps.java:49)
-	at ✽.Doy click al boton comprar(file:///C:/Users/eduar/OneDrive/Escritorio/Grupo%20Consiti/QA/Selenium/SimanAutomatedQA/src/test/resources/features/Productos.feature:42)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="Probar metodo de pago por cuotas #4"></a>
-<h3 class="failures">Probar metodo de pago por cuotas #4</h3>
-<span class="code">
-<pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='payment-group-SerfinsaPaymentGroup'] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-6KEC16J', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\eduar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52814/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d0aff37978d370eede26e699d069f69
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at pages.BasePage.find(BasePage.java:63)
-	at pages.BasePage.clickElement(BasePage.java:67)
-	at pages.ProductosPage.clickPagoPorCuotas(ProductosPage.java:119)
-	at steps.ProductosSteps.pagoCuotas(ProductosSteps.java:90)
-	at ✽.Elijo metodo de pago por cuotas(file:///C:/Users/eduar/OneDrive/Escritorio/Grupo%20Consiti/QA/Selenium/SimanAutomatedQA/src/test/resources/features/Productos.feature:44)
+	at pages.BasePage.findByID(BasePage.java:71)
+	at pages.BasePage.writeByID(BasePage.java:79)
+	at pages.ProductosPage.procederPagar(ProductosPage.java:199)
+	at steps.ProductosSteps.procederPagar(ProductosSteps.java:70)
+	at ✽.Doy click a proceder a pagar(file:///C:/Users/eduar/OneDrive/Escritorio/Grupo%20Consiti/QA/Selenium/SimanAutomatedQA/src/test/resources/features/Productos.feature:44)
 </pre>
 </span>
 </div>
@@ -193,27 +105,12 @@ Session ID: 7d0aff37978d370eede26e699d069f69
 </thead>
 <tr>
 <td class="success">Iniciar sesion</td>
-<td class="success">1m15.90s</td>
+<td class="success">1m13.30s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Probar metodo de pago por cuotas #1</td>
-<td class="failures">27.240s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">Probar metodo de pago por cuotas #2</td>
-<td class="failures">51.516s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">Probar metodo de pago por cuotas #3</td>
-<td class="failures">17.720s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">Probar metodo de pago por cuotas #4</td>
-<td class="failures">44.192s</td>
+<td class="failures">Probar metodo de pago por cuotas</td>
+<td class="failures">3m14.18s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -224,15 +121,15 @@ Session ID: 7d0aff37978d370eede26e699d069f69
 <pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 59568
+Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 53706
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-abr. 07, 2022 4:40:40 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+abr. 08, 2022 11:29:07 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-abr. 07, 2022 4:40:41 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+abr. 08, 2022 11:29:07 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 100, so returning the closest version found: 97
-abr. 07, 2022 4:40:41 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+abr. 08, 2022 11:29:07 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 100 of 97
 </pre>
 </span>
@@ -245,7 +142,7 @@ INFO: Found CDP implementation for version 100 of 97
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1.1</a> at 7 abr. 2022 16:44:09</p>
+<a href="http://www.gradle.org">Gradle 7.1.1</a> at 8 abr. 2022 11:33:33</p>
 </div>
 </div>
 </body>

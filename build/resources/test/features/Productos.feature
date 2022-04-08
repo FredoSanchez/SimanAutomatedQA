@@ -49,8 +49,8 @@ Feature: Compra de productos
     Examples:
       |  producto   | garantia |
       |103245282    |opcion 2  |
-      |103245282    |opcion 3  |
-      |103245282    |opcion 1  |
-      |103245282    |opcion 4  |
+#      |103245282    |opcion 3  |
+#      |103245282    |opcion 1  |
+#      |103245282    |opcion 4  |
 
 
