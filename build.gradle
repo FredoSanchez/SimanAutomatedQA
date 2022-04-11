@@ -5,20 +5,27 @@ plugins {
 group 'org.consiti'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 15
+sourceCompatibility = 8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    /*testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 
     testImplementation group: 'junit', name: 'junit', version: '4.13.2'
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.1.2'
     implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.2.3'
     testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.2.3'
+    implementation 'com.aventstack:extentreports-cucumber4-adapter:1.0.7'*/
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '4.2.0'
+    testImplementation 'io.cucumber:cucumber-junit:4.2.0'
+
     implementation 'com.aventstack:extentreports-cucumber4-adapter:1.0.7'
 }
 

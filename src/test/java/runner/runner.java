@@ -3,8 +3,8 @@ package runner;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
 import pages.BasePage;
 
 //{"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
