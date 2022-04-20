@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16738980600,
+              "duration": 8332662800,
               "status": "passed"
             },
             "line": 6,
@@ -33,7 +33,7 @@
         "steps": [
           {
             "result": {
-              "duration": 61245581400,
+              "duration": 61731131200,
               "status": "passed"
             },
             "line": 10,
@@ -45,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 640600,
+              "duration": 1280500,
               "status": "passed"
             },
             "line": 11,
@@ -74,7 +74,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10310267000,
+              "duration": 8680719000,
               "status": "passed"
             },
             "line": 6,
@@ -96,7 +96,7 @@
         "steps": [
           {
             "result": {
-              "duration": 23705779600,
+              "duration": 5788430300,
               "status": "passed"
             },
             "line": 38,
@@ -114,7 +114,7 @@
           },
           {
             "result": {
-              "duration": 3665961900,
+              "duration": 3976740800,
               "status": "passed"
             },
             "line": 39,
@@ -126,7 +126,7 @@
           },
           {
             "result": {
-              "duration": 4848875100,
+              "duration": 6612509800,
               "status": "passed"
             },
             "line": 40,
@@ -138,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 103989100,
+              "duration": 169550800,
               "status": "passed"
             },
             "line": 42,
@@ -150,7 +150,7 @@
           },
           {
             "result": {
-              "duration": 17565949800,
+              "duration": 10520083200,
               "status": "passed"
             },
             "line": 43,
@@ -162,7 +162,7 @@
           },
           {
             "result": {
-              "duration": 63283063300,
+              "duration": 63325256000,
               "status": "passed"
             },
             "line": 44,
@@ -174,7 +174,7 @@
           },
           {
             "result": {
-              "duration": 235615000,
+              "duration": 243209400,
               "status": "passed"
             },
             "line": 46,
@@ -186,7 +186,7 @@
           },
           {
             "result": {
-              "duration": 84744000,
+              "duration": 118579800,
               "status": "passed"
             },
             "line": 47,
@@ -204,7 +204,7 @@
           },
           {
             "result": {
-              "duration": 186550100,
+              "duration": 190316200,
               "status": "passed"
             },
             "line": 48,
@@ -222,7 +222,7 @@
           },
           {
             "result": {
-              "duration": 5116178600,
+              "duration": 5121437200,
               "status": "passed"
             },
             "line": 49,
@@ -234,7 +234,7 @@
           },
           {
             "result": {
-              "duration": 12010969500,
+              "duration": 14012095600,
               "status": "passed"
             },
             "line": 50,
@@ -266,9 +266,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom target frame detached\n  (Session info: chrome\u003d100.0.4896.127)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-6KEC16J\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_301\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\eduar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52845}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 092f7660b7571f94abd1bb84c863b220\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat pages.BasePage.navigateTo(BasePage.java:56)\r\n\tat pages.ProductosPage.navigateToSiman(ProductosPage.java:54)\r\n\tat steps.ProductosSteps.navigateToSimanPage(ProductosSteps.java:18)\r\n\tat ✽.Navego a siman.com(src/test/resources/features/Productos.feature:6)\r\n",
-              "duration": 4398113400,
-              "status": "failed"
+              "duration": 5932060800,
+              "status": "passed"
             },
             "line": 6,
             "name": "Navego a siman.com",
@@ -289,8 +288,8 @@
         "steps": [
           {
             "result": {
-              "duration": 174100,
-              "status": "skipped"
+              "duration": 5705906800,
+              "status": "passed"
             },
             "line": 57,
             "name": "Busco 100888754 en siman.com",
@@ -307,8 +306,8 @@
           },
           {
             "result": {
-              "duration": 103300,
-              "status": "skipped"
+              "duration": 2627667700,
+              "status": "passed"
             },
             "line": 58,
             "name": "Selecciono producto 2",
@@ -319,8 +318,8 @@
           },
           {
             "result": {
-              "duration": 128400,
-              "status": "skipped"
+              "duration": 2195434500,
+              "status": "passed"
             },
             "line": 61,
             "name": "Doy click al boton comprar",
@@ -331,8 +330,8 @@
           },
           {
             "result": {
-              "duration": 94400,
-              "status": "skipped"
+              "duration": 9119886800,
+              "status": "passed"
             },
             "line": 62,
             "name": "Doy click al boton finalizar compra",
@@ -343,8 +342,8 @@
           },
           {
             "result": {
-              "duration": 75300,
-              "status": "skipped"
+              "duration": 120129200,
+              "status": "passed"
             },
             "line": 65,
             "name": "Elijo metodo de pago meses sin intereses",
@@ -355,8 +354,8 @@
           },
           {
             "result": {
-              "duration": 279100,
-              "status": "skipped"
+              "duration": 126278400,
+              "status": "passed"
             },
             "line": 66,
             "name": "Elejir Cuscatlan",
@@ -373,8 +372,8 @@
           },
           {
             "result": {
-              "duration": 1806400,
-              "status": "skipped"
+              "duration": 166212900,
+              "status": "passed"
             },
             "line": 67,
             "name": "Elijo 2 de meses",
@@ -391,8 +390,8 @@
           },
           {
             "result": {
-              "duration": 137800,
-              "status": "skipped"
+              "duration": 5125245900,
+              "status": "passed"
             },
             "line": 68,
             "name": "Doy click al boton de comprar ahora",
@@ -403,8 +402,8 @@
           },
           {
             "result": {
-              "duration": 112800,
-              "status": "skipped"
+              "duration": 14000453700,
+              "status": "passed"
             },
             "line": 69,
             "name": "Producto fue comprado exitosamente",
@@ -429,9 +428,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom target frame detached\n  (Session info: chrome\u003d100.0.4896.127)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-6KEC16J\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_301\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\eduar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52845}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 092f7660b7571f94abd1bb84c863b220\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat pages.BasePage.navigateTo(BasePage.java:56)\r\n\tat pages.ProductosPage.navigateToSiman(ProductosPage.java:54)\r\n\tat steps.ProductosSteps.navigateToSimanPage(ProductosSteps.java:18)\r\n\tat ✽.Navego a siman.com(src/test/resources/features/Productos.feature:6)\r\n",
-              "duration": 5568851900,
-              "status": "failed"
+              "duration": 5772077500,
+              "status": "passed"
             },
             "line": 6,
             "name": "Navego a siman.com",
@@ -452,8 +450,8 @@
         "steps": [
           {
             "result": {
-              "duration": 181900,
-              "status": "skipped"
+              "duration": 5715393100,
+              "status": "passed"
             },
             "line": 57,
             "name": "Busco 100934076 en siman.com",
@@ -470,8 +468,8 @@
           },
           {
             "result": {
-              "duration": 127100,
-              "status": "skipped"
+              "duration": 1941008600,
+              "status": "passed"
             },
             "line": 58,
             "name": "Selecciono producto 2",
@@ -482,8 +480,8 @@
           },
           {
             "result": {
-              "duration": 90100,
-              "status": "skipped"
+              "duration": 2652243700,
+              "status": "passed"
             },
             "line": 61,
             "name": "Doy click al boton comprar",
@@ -494,8 +492,8 @@
           },
           {
             "result": {
-              "duration": 72700,
-              "status": "skipped"
+              "duration": 9527987600,
+              "status": "passed"
             },
             "line": 62,
             "name": "Doy click al boton finalizar compra",
@@ -506,8 +504,8 @@
           },
           {
             "result": {
-              "duration": 73500,
-              "status": "skipped"
+              "duration": 298871600,
+              "status": "passed"
             },
             "line": 65,
             "name": "Elijo metodo de pago meses sin intereses",
@@ -518,8 +516,8 @@
           },
           {
             "result": {
-              "duration": 78100,
-              "status": "skipped"
+              "duration": 111995700,
+              "status": "passed"
             },
             "line": 66,
             "name": "Elejir BAC",
@@ -536,8 +534,8 @@
           },
           {
             "result": {
-              "duration": 75600,
-              "status": "skipped"
+              "duration": 145216500,
+              "status": "passed"
             },
             "line": 67,
             "name": "Elijo 1 de meses",
@@ -554,8 +552,8 @@
           },
           {
             "result": {
-              "duration": 69700,
-              "status": "skipped"
+              "duration": 5132823400,
+              "status": "passed"
             },
             "line": 68,
             "name": "Doy click al boton de comprar ahora",
@@ -566,8 +564,8 @@
           },
           {
             "result": {
-              "duration": 75400,
-              "status": "skipped"
+              "duration": 14000634500,
+              "status": "passed"
             },
             "line": 69,
             "name": "Producto fue comprado exitosamente",
@@ -592,9 +590,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom target frame detached\n  (Session info: chrome\u003d100.0.4896.127)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-6KEC16J\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_301\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\eduar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52845}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 092f7660b7571f94abd1bb84c863b220\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat pages.BasePage.navigateTo(BasePage.java:56)\r\n\tat pages.ProductosPage.navigateToSiman(ProductosPage.java:54)\r\n\tat steps.ProductosSteps.navigateToSimanPage(ProductosSteps.java:18)\r\n\tat ✽.Navego a siman.com(src/test/resources/features/Productos.feature:6)\r\n",
-              "duration": 5632327100,
-              "status": "failed"
+              "duration": 4660639500,
+              "status": "passed"
             },
             "line": 6,
             "name": "Navego a siman.com",
@@ -615,8 +612,8 @@
         "steps": [
           {
             "result": {
-              "duration": 182500,
-              "status": "skipped"
+              "duration": 5661559800,
+              "status": "passed"
             },
             "line": 77,
             "name": "Busco 101599130 en siman.com",
@@ -633,8 +630,8 @@
           },
           {
             "result": {
-              "duration": 107800,
-              "status": "skipped"
+              "duration": 1971787300,
+              "status": "passed"
             },
             "line": 78,
             "name": "Selecciono producto 2",
@@ -645,8 +642,8 @@
           },
           {
             "result": {
-              "duration": 122700,
-              "status": "skipped"
+              "duration": 3243755200,
+              "status": "passed"
             },
             "line": 79,
             "name": "Dar click a boton de Siman Pro",
@@ -657,8 +654,8 @@
           },
           {
             "result": {
-              "duration": 251100,
-              "status": "skipped"
+              "duration": 189796300,
+              "status": "passed"
             },
             "line": 81,
             "name": "Doy click al boton comprar",
@@ -669,8 +666,8 @@
           },
           {
             "result": {
-              "duration": 469000,
-              "status": "skipped"
+              "duration": 9175635300,
+              "status": "passed"
             },
             "line": 82,
             "name": "Doy click al boton finalizar compra",
@@ -681,8 +678,8 @@
           },
           {
             "result": {
-              "duration": 93300,
-              "status": "skipped"
+              "duration": 132433200,
+              "status": "passed"
             },
             "line": 85,
             "name": "Elijo metodo de pago meses sin intereses",
@@ -693,8 +690,8 @@
           },
           {
             "result": {
-              "duration": 80400,
-              "status": "skipped"
+              "duration": 145789600,
+              "status": "passed"
             },
             "line": 86,
             "name": "Elejir Davivienda",
@@ -711,8 +708,8 @@
           },
           {
             "result": {
-              "duration": 76300,
-              "status": "skipped"
+              "duration": 144408800,
+              "status": "passed"
             },
             "line": 87,
             "name": "Elijo 2 de meses",
@@ -729,8 +726,8 @@
           },
           {
             "result": {
-              "duration": 95000,
-              "status": "skipped"
+              "duration": 5123227800,
+              "status": "passed"
             },
             "line": 88,
             "name": "Doy click al boton de comprar ahora",
@@ -741,8 +738,8 @@
           },
           {
             "result": {
-              "duration": 110800,
-              "status": "skipped"
+              "duration": 14006400600,
+              "status": "passed"
             },
             "line": 89,
             "name": "Producto fue comprado exitosamente",
@@ -767,7 +764,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11216536300,
+              "duration": 4681284500,
               "status": "passed"
             },
             "line": 6,
@@ -789,7 +786,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5589555200,
+              "duration": 5651781400,
               "status": "passed"
             },
             "line": 77,
@@ -807,7 +804,7 @@
           },
           {
             "result": {
-              "duration": 3286026700,
+              "duration": 2276475700,
               "status": "passed"
             },
             "line": 78,
@@ -819,7 +816,7 @@
           },
           {
             "result": {
-              "duration": 4448770600,
+              "duration": 4835217400,
               "status": "passed"
             },
             "line": 79,
@@ -831,7 +828,7 @@
           },
           {
             "result": {
-              "duration": 104216300,
+              "duration": 181047500,
               "status": "passed"
             },
             "line": 81,
@@ -843,7 +840,7 @@
           },
           {
             "result": {
-              "duration": 10166158700,
+              "duration": 8238858700,
               "status": "passed"
             },
             "line": 82,
@@ -855,7 +852,7 @@
           },
           {
             "result": {
-              "duration": 115993000,
+              "duration": 148342600,
               "status": "passed"
             },
             "line": 85,
@@ -867,7 +864,7 @@
           },
           {
             "result": {
-              "duration": 110957800,
+              "duration": 214049500,
               "status": "passed"
             },
             "line": 86,
@@ -885,7 +882,7 @@
           },
           {
             "result": {
-              "duration": 146427300,
+              "duration": 166080000,
               "status": "passed"
             },
             "line": 87,
@@ -903,7 +900,7 @@
           },
           {
             "result": {
-              "duration": 5087481700,
+              "duration": 5132677900,
               "status": "passed"
             },
             "line": 88,
@@ -915,7 +912,7 @@
           },
           {
             "result": {
-              "duration": 12015279500,
+              "duration": 14001602100,
               "status": "passed"
             },
             "line": 89,
@@ -941,9 +938,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom target frame detached\n  (Session info: chrome\u003d100.0.4896.127)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-6KEC16J\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_301\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\eduar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52845}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 092f7660b7571f94abd1bb84c863b220\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat pages.BasePage.navigateTo(BasePage.java:56)\r\n\tat pages.ProductosPage.navigateToSiman(ProductosPage.java:54)\r\n\tat steps.ProductosSteps.navigateToSimanPage(ProductosSteps.java:18)\r\n\tat ✽.Navego a siman.com(src/test/resources/features/Productos.feature:6)\r\n",
-              "duration": 2346354800,
-              "status": "failed"
+              "duration": 7453413200,
+              "status": "passed"
             },
             "line": 6,
             "name": "Navego a siman.com",
@@ -964,8 +960,8 @@
         "steps": [
           {
             "result": {
-              "duration": 125500,
-              "status": "skipped"
+              "duration": 5713332800,
+              "status": "passed"
             },
             "line": 77,
             "name": "Busco -100486 en siman.com",
@@ -982,8 +978,9 @@
           },
           {
             "result": {
-              "duration": 90300,
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id\u003d\u0027gallery-layout-container\u0027]/div/section/a (tried for 20 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat pages.BasePage.find(BasePage.java:69)\r\n\tat pages.BasePage.clickElement(BasePage.java:73)\r\n\tat pages.ProductosPage.clickProducto2(ProductosPage.java:118)\r\n\tat steps.ProductosSteps.seleccionarProducto2(ProductosSteps.java:92)\r\n\tat ✽.Selecciono producto 2(src/test/resources/features/Productos.feature:78)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027gallery-layout-container\u0027]/div/section/a\"}\n  (Session info: chrome\u003d100.0.4896.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-6KEC16J\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_301\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\eduar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61559}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: db6f6a2864513c759b8848f0a1168956\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027gallery-layout-container\u0027]/div/section/a}\r\n\tat sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat pages.BasePage.find(BasePage.java:69)\r\n\tat pages.BasePage.clickElement(BasePage.java:73)\r\n\tat pages.ProductosPage.clickProducto2(ProductosPage.java:118)\r\n\tat steps.ProductosSteps.seleccionarProducto2(ProductosSteps.java:92)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:49)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:124)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:133)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)\r\n\tat org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)\r\n\tat org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)\r\n\tat org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)\r\n\tat org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)\r\n\tat org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)\r\n\tat org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)\r\n\tat org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)\r\n\tat com.sun.proxy.$Proxy2.processTestClass(Unknown Source)\r\n\tat org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:121)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)\r\n\tat org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)\r\n\tat org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)\r\n\tat org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)\r\n\tat org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)\r\n\tat org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)\r\n\tat org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\r\n\tat org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)\r\n\tat java.lang.Thread.run(Thread.java:748)\r\n",
+              "duration": 20141978300,
+              "status": "failed"
             },
             "line": 78,
             "name": "Selecciono producto 2",
@@ -994,7 +991,7 @@
           },
           {
             "result": {
-              "duration": 62800,
+              "duration": 171800,
               "status": "skipped"
             },
             "line": 79,
@@ -1006,7 +1003,7 @@
           },
           {
             "result": {
-              "duration": 59800,
+              "duration": 77700,
               "status": "skipped"
             },
             "line": 81,
@@ -1018,7 +1015,7 @@
           },
           {
             "result": {
-              "duration": 62900,
+              "duration": 75600,
               "status": "skipped"
             },
             "line": 82,
@@ -1030,7 +1027,7 @@
           },
           {
             "result": {
-              "duration": 67900,
+              "duration": 58700,
               "status": "skipped"
             },
             "line": 85,
@@ -1042,7 +1039,7 @@
           },
           {
             "result": {
-              "duration": 71400,
+              "duration": 84500,
               "status": "skipped"
             },
             "line": 86,
@@ -1060,7 +1057,7 @@
           },
           {
             "result": {
-              "duration": 87400,
+              "duration": 86500,
               "status": "skipped"
             },
             "line": 87,
@@ -1078,7 +1075,7 @@
           },
           {
             "result": {
-              "duration": 66800,
+              "duration": 83900,
               "status": "skipped"
             },
             "line": 88,
@@ -1090,7 +1087,7 @@
           },
           {
             "result": {
-              "duration": 91600,
+              "duration": 89000,
               "status": "skipped"
             },
             "line": 89,
