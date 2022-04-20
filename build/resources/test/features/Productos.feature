@@ -90,8 +90,8 @@ Feature: Compra de productos
 
     Examples:
       |  producto   | garantia | banco    | cantidad |
-      |101103840    |opcion 1  |Davivienda|     2    |
-      |100486533    |opcion 1  |BAC       |     2    |
-      |-100486       |opcion 1  |BAC       |     2    |
+      |101599130    |opcion 1  |Davivienda|     2    |
+      |100486533    |opcion 1  |Promerica |     2    |
+      |-100486      |opcion 1  |BAC       |     2    |
 
 

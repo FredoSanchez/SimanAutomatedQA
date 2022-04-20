@@ -1,0 +1,1127 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Probar la compra de productos con diferentes metodos de pago",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 16738980600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navego a siman.com",
+            "match": {
+              "location": "ProductosSteps.navigateToSimanPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Iniciar sesion",
+        "description": "",
+        "id": "compra-de-productos;iniciar-sesion",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 61245581400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Inicio sesion en siman.com",
+            "match": {
+              "location": "ProductosSteps.iniciarSesion()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 640600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Inicio sesion correctamente",
+            "match": {
+              "location": "ProductosSteps.sesionCorrecta()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Productos"
+          },
+          {
+            "name": "@Inicio"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Probar la compra de productos con diferentes metodos de pago",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10310267000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navego a siman.com",
+            "match": {
+              "location": "ProductosSteps.navigateToSimanPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 54,
+        "name": "Probar metodo de pago por cuotas",
+        "description": "",
+        "id": "compra-de-productos;probar-metodo-de-pago-por-cuotas;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 23705779600,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Busco 103245282 en siman.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "103245282",
+                  "offset": 6
+                }
+              ],
+              "location": "ProductosSteps.buscarProductoSiman(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3665961900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Selecciono producto 2",
+            "match": {
+              "location": "ProductosSteps.seleccionarProducto2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4848875100,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Dar click a boton de Siman Pro",
+            "match": {
+              "location": "ProductosSteps.simanPro()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103989100,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Doy click al boton comprar",
+            "match": {
+              "location": "ProductosSteps.botonComprar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17565949800,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Doy click al boton finalizar compra",
+            "match": {
+              "location": "ProductosSteps.botonFinalizarCompra()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63283063300,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Doy click a proceder a pagar",
+            "match": {
+              "location": "ProductosSteps.procederPagar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235615000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Elijo metodo de pago meses sin intereses",
+            "match": {
+              "location": "ProductosSteps.pagoMesesIntereses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84744000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Elejir BAC",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BAC",
+                  "offset": 7
+                }
+              ],
+              "location": "ProductosSteps.elejirBanco(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 186550100,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Elijo 2 de meses",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 6
+                }
+              ],
+              "location": "ProductosSteps.elijoMeses(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5116178600,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Doy click al boton de comprar ahora",
+            "match": {
+              "location": "ProductosSteps.comprarAhora()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12010969500,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Producto fue comprado exitosamente",
+            "match": {
+              "location": "ProductosSteps.forroExitoso()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Productos"
+          },
+          {
+            "name": "@Forro"
+          },
+          {
+            "name": "@Refri"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Probar la compra de productos con diferentes metodos de pago",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom target frame detached\n  (Session info: chrome\u003d100.0.4896.127)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-6KEC16J\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_301\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\eduar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52845}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 092f7660b7571f94abd1bb84c863b220\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat pages.BasePage.navigateTo(BasePage.java:56)\r\n\tat pages.ProductosPage.navigateToSiman(ProductosPage.java:54)\r\n\tat steps.ProductosSteps.navigateToSimanPage(ProductosSteps.java:18)\r\n\tat ✽.Navego a siman.com(src/test/resources/features/Productos.feature:6)\r\n",
+              "duration": 4398113400,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "Navego a siman.com",
+            "match": {
+              "location": "ProductosSteps.navigateToSimanPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 73,
+        "name": "Probar metodo meses sin intereses sin SP",
+        "description": "",
+        "id": "compra-de-productos;probar-metodo-meses-sin-intereses-sin-sp;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 174100,
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "Busco 100888754 en siman.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100888754",
+                  "offset": 6
+                }
+              ],
+              "location": "ProductosSteps.buscarProductoSiman(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103300,
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "Selecciono producto 2",
+            "match": {
+              "location": "ProductosSteps.seleccionarProducto2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128400,
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "Doy click al boton comprar",
+            "match": {
+              "location": "ProductosSteps.botonComprar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94400,
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "Doy click al boton finalizar compra",
+            "match": {
+              "location": "ProductosSteps.botonFinalizarCompra()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75300,
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "Elijo metodo de pago meses sin intereses",
+            "match": {
+              "location": "ProductosSteps.pagoMesesIntereses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 279100,
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "Elejir Cuscatlan",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cuscatlan",
+                  "offset": 7
+                }
+              ],
+              "location": "ProductosSteps.elejirBanco(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1806400,
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "Elijo 2 de meses",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 6
+                }
+              ],
+              "location": "ProductosSteps.elijoMeses(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 137800,
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "Doy click al boton de comprar ahora",
+            "match": {
+              "location": "ProductosSteps.comprarAhora()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112800,
+              "status": "skipped"
+            },
+            "line": 69,
+            "name": "Producto fue comprado exitosamente",
+            "match": {
+              "location": "ProductosSteps.forroExitoso()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Productos"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Probar la compra de productos con diferentes metodos de pago",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom target frame detached\n  (Session info: chrome\u003d100.0.4896.127)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-6KEC16J\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_301\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\eduar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52845}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 092f7660b7571f94abd1bb84c863b220\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat pages.BasePage.navigateTo(BasePage.java:56)\r\n\tat pages.ProductosPage.navigateToSiman(ProductosPage.java:54)\r\n\tat steps.ProductosSteps.navigateToSimanPage(ProductosSteps.java:18)\r\n\tat ✽.Navego a siman.com(src/test/resources/features/Productos.feature:6)\r\n",
+              "duration": 5568851900,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "Navego a siman.com",
+            "match": {
+              "location": "ProductosSteps.navigateToSimanPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 74,
+        "name": "Probar metodo meses sin intereses sin SP",
+        "description": "",
+        "id": "compra-de-productos;probar-metodo-meses-sin-intereses-sin-sp;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 181900,
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "Busco 100934076 en siman.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100934076",
+                  "offset": 6
+                }
+              ],
+              "location": "ProductosSteps.buscarProductoSiman(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127100,
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "Selecciono producto 2",
+            "match": {
+              "location": "ProductosSteps.seleccionarProducto2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90100,
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "Doy click al boton comprar",
+            "match": {
+              "location": "ProductosSteps.botonComprar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72700,
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "Doy click al boton finalizar compra",
+            "match": {
+              "location": "ProductosSteps.botonFinalizarCompra()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73500,
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "Elijo metodo de pago meses sin intereses",
+            "match": {
+              "location": "ProductosSteps.pagoMesesIntereses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78100,
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "Elejir BAC",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BAC",
+                  "offset": 7
+                }
+              ],
+              "location": "ProductosSteps.elejirBanco(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75600,
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "Elijo 1 de meses",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 6
+                }
+              ],
+              "location": "ProductosSteps.elijoMeses(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69700,
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "Doy click al boton de comprar ahora",
+            "match": {
+              "location": "ProductosSteps.comprarAhora()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75400,
+              "status": "skipped"
+            },
+            "line": 69,
+            "name": "Producto fue comprado exitosamente",
+            "match": {
+              "location": "ProductosSteps.forroExitoso()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Productos"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Probar la compra de productos con diferentes metodos de pago",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom target frame detached\n  (Session info: chrome\u003d100.0.4896.127)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-6KEC16J\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_301\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\eduar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52845}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 092f7660b7571f94abd1bb84c863b220\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat pages.BasePage.navigateTo(BasePage.java:56)\r\n\tat pages.ProductosPage.navigateToSiman(ProductosPage.java:54)\r\n\tat steps.ProductosSteps.navigateToSimanPage(ProductosSteps.java:18)\r\n\tat ✽.Navego a siman.com(src/test/resources/features/Productos.feature:6)\r\n",
+              "duration": 5632327100,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "Navego a siman.com",
+            "match": {
+              "location": "ProductosSteps.navigateToSimanPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 93,
+        "name": "Probar metodo meses sin intereses con SP",
+        "description": "",
+        "id": "compra-de-productos;probar-metodo-meses-sin-intereses-con-sp;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 182500,
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "Busco 101599130 en siman.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "101599130",
+                  "offset": 6
+                }
+              ],
+              "location": "ProductosSteps.buscarProductoSiman(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 107800,
+              "status": "skipped"
+            },
+            "line": 78,
+            "name": "Selecciono producto 2",
+            "match": {
+              "location": "ProductosSteps.seleccionarProducto2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 122700,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "Dar click a boton de Siman Pro",
+            "match": {
+              "location": "ProductosSteps.simanPro()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 251100,
+              "status": "skipped"
+            },
+            "line": 81,
+            "name": "Doy click al boton comprar",
+            "match": {
+              "location": "ProductosSteps.botonComprar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 469000,
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "Doy click al boton finalizar compra",
+            "match": {
+              "location": "ProductosSteps.botonFinalizarCompra()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93300,
+              "status": "skipped"
+            },
+            "line": 85,
+            "name": "Elijo metodo de pago meses sin intereses",
+            "match": {
+              "location": "ProductosSteps.pagoMesesIntereses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80400,
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "Elejir Davivienda",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Davivienda",
+                  "offset": 7
+                }
+              ],
+              "location": "ProductosSteps.elejirBanco(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76300,
+              "status": "skipped"
+            },
+            "line": 87,
+            "name": "Elijo 2 de meses",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 6
+                }
+              ],
+              "location": "ProductosSteps.elijoMeses(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 95000,
+              "status": "skipped"
+            },
+            "line": 88,
+            "name": "Doy click al boton de comprar ahora",
+            "match": {
+              "location": "ProductosSteps.comprarAhora()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110800,
+              "status": "skipped"
+            },
+            "line": 89,
+            "name": "Producto fue comprado exitosamente",
+            "match": {
+              "location": "ProductosSteps.forroExitoso()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Productos"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Probar la compra de productos con diferentes metodos de pago",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11216536300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navego a siman.com",
+            "match": {
+              "location": "ProductosSteps.navigateToSimanPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 94,
+        "name": "Probar metodo meses sin intereses con SP",
+        "description": "",
+        "id": "compra-de-productos;probar-metodo-meses-sin-intereses-con-sp;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5589555200,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "Busco 100486533 en siman.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100486533",
+                  "offset": 6
+                }
+              ],
+              "location": "ProductosSteps.buscarProductoSiman(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3286026700,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "Selecciono producto 2",
+            "match": {
+              "location": "ProductosSteps.seleccionarProducto2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4448770600,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "Dar click a boton de Siman Pro",
+            "match": {
+              "location": "ProductosSteps.simanPro()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104216300,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "Doy click al boton comprar",
+            "match": {
+              "location": "ProductosSteps.botonComprar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10166158700,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "Doy click al boton finalizar compra",
+            "match": {
+              "location": "ProductosSteps.botonFinalizarCompra()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115993000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "Elijo metodo de pago meses sin intereses",
+            "match": {
+              "location": "ProductosSteps.pagoMesesIntereses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110957800,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "Elejir Promerica",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Promerica",
+                  "offset": 7
+                }
+              ],
+              "location": "ProductosSteps.elejirBanco(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146427300,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "Elijo 2 de meses",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 6
+                }
+              ],
+              "location": "ProductosSteps.elijoMeses(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5087481700,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "Doy click al boton de comprar ahora",
+            "match": {
+              "location": "ProductosSteps.comprarAhora()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12015279500,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "Producto fue comprado exitosamente",
+            "match": {
+              "location": "ProductosSteps.forroExitoso()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Productos"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Probar la compra de productos con diferentes metodos de pago",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom target frame detached\n  (Session info: chrome\u003d100.0.4896.127)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-6KEC16J\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_301\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\eduar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52845}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 092f7660b7571f94abd1bb84c863b220\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat pages.BasePage.navigateTo(BasePage.java:56)\r\n\tat pages.ProductosPage.navigateToSiman(ProductosPage.java:54)\r\n\tat steps.ProductosSteps.navigateToSimanPage(ProductosSteps.java:18)\r\n\tat ✽.Navego a siman.com(src/test/resources/features/Productos.feature:6)\r\n",
+              "duration": 2346354800,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "Navego a siman.com",
+            "match": {
+              "location": "ProductosSteps.navigateToSimanPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 95,
+        "name": "Probar metodo meses sin intereses con SP",
+        "description": "",
+        "id": "compra-de-productos;probar-metodo-meses-sin-intereses-con-sp;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 125500,
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "Busco -100486 en siman.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "-100486",
+                  "offset": 6
+                }
+              ],
+              "location": "ProductosSteps.buscarProductoSiman(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 90300,
+              "status": "skipped"
+            },
+            "line": 78,
+            "name": "Selecciono producto 2",
+            "match": {
+              "location": "ProductosSteps.seleccionarProducto2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62800,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "Dar click a boton de Siman Pro",
+            "match": {
+              "location": "ProductosSteps.simanPro()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59800,
+              "status": "skipped"
+            },
+            "line": 81,
+            "name": "Doy click al boton comprar",
+            "match": {
+              "location": "ProductosSteps.botonComprar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62900,
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "Doy click al boton finalizar compra",
+            "match": {
+              "location": "ProductosSteps.botonFinalizarCompra()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67900,
+              "status": "skipped"
+            },
+            "line": 85,
+            "name": "Elijo metodo de pago meses sin intereses",
+            "match": {
+              "location": "ProductosSteps.pagoMesesIntereses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71400,
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "Elejir BAC",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BAC",
+                  "offset": 7
+                }
+              ],
+              "location": "ProductosSteps.elejirBanco(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87400,
+              "status": "skipped"
+            },
+            "line": 87,
+            "name": "Elijo 2 de meses",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 6
+                }
+              ],
+              "location": "ProductosSteps.elijoMeses(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66800,
+              "status": "skipped"
+            },
+            "line": 88,
+            "name": "Doy click al boton de comprar ahora",
+            "match": {
+              "location": "ProductosSteps.comprarAhora()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91600,
+              "status": "skipped"
+            },
+            "line": 89,
+            "name": "Producto fue comprado exitosamente",
+            "match": {
+              "location": "ProductosSteps.forroExitoso()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Productos"
+          }
+        ]
+      }
+    ],
+    "name": "Compra de productos",
+    "description": "",
+    "id": "compra-de-productos",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Productos.feature",
+    "tags": [
+      {
+        "name": "@Productos",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -106,7 +106,7 @@ public class ProductosSteps {
     public void forroExitoso(){
         //Assert.assertEquals(true, productosPage.compraExitosa().contains("Gracias por la compra"));
         try{
-            Thread.sleep(12000);
+            Thread.sleep(14000);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
