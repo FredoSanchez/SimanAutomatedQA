@@ -30,7 +30,7 @@ public class ProductosPage extends BasePage {
 
     String producto2 = "//*[@id='gallery-layout-container']/div/section/a", // *[@id="gallery-layout-container"]/div/section/a
             pagoPorCuotas = "//a[@id='payment-group-SerfinsaPaymentGroup']",
-            botonPRO = "//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[5]/div[2]/button[1]",
+            botonPRO = "//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[6]/div[2]/button[1]", //"//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[5]/div[2]/button[1]",
             btnBuy = "body.bg-base:nth-child(2) div.render-container.render-route-store-product:nth-child(2) div.render-provider div.vtex-store__template.bg-base div.flex.flex-column.min-vh-100.w-100 div.vtex-product-context-provider div.flex.flex-column.min-vh-100.w-100 div.flex.flex-grow-1.w-100.flex-column div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--pag-default section.vtex-store-components-3-x-container.ph3.ph5-m.ph2-xl.mw9.center div.flex.mt0.mb0.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--pag-default.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--pag-default.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--pag-default.pb0:nth-child(3) div.vtex-flex-layout-0-x-flexRow div.flex.mt4.mb7.pt0.pb7.justify-start.vtex-flex-layout-0-x-flexRowContent.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--pdp-right-col.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--pdp-right-col.pb0:nth-child(9) div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--navigation-comprar.vtex-flex-layout-0-x-flexRow--pdp-estructuraM div.flex.mt0.mb0.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--navigation-comprar.vtex-flex-layout-0-x-flexRowContent--pdp-estructuraM.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--row-two-buttons div.flex.mt4.mb4.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--row-two-buttons.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--buy-button-two.vtex-flex-layout-0-x-flexCol--pdp-estructuraM.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--buy-button-two.vtex-flex-layout-0-x-flexColChild--pdp-estructuraM.pb0 > button.vtex-button.bw1.ba.fw5.v-mid.relative.pa0.lh-solid.br2.min-h-regular.t-action.bg-action-primary.b--action-primary.c-on-action-primary.hover-bg-action-primary.hover-b--action-primary.hover-c-on-action-primary.pointer.w-100",//"body.bg-base:nth-child(2) div.render-container.render-route-store-product:nth-child(2) div.render-provider div.vtex-store__template.bg-base div.flex.flex-column.min-vh-100.w-100 div.vtex-product-context-provider div.flex.flex-column.min-vh-100.w-100 div.flex.flex-grow-1.w-100.flex-column div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--pag-default section.vtex-store-components-3-x-container.ph3.ph5-m.ph2-xl.mw9.center div.flex.mt0.mb0.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--pag-default.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--pag-default.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--pag-default.pb0:nth-child(3) div.vtex-flex-layout-0-x-flexRow div.flex.mt4.mb7.pt0.pb7.justify-start.vtex-flex-layout-0-x-flexRowContent.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--pdp-right-col.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--pdp-right-col.pb0:nth-child(8) div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--navigation-comprar.vtex-flex-layout-0-x-flexRow--pdp-estructuraM div.flex.mt0.mb0.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--navigation-comprar.vtex-flex-layout-0-x-flexRowContent--pdp-estructuraM.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--row-two-buttons div.flex.mt4.mb4.pt0.pb0.justify-start.vtex-flex-layout-0-x-flexRowContent.vtex-flex-layout-0-x-flexRowContent--row-two-buttons.items-stretch.w-100 div.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex div.vtex-flex-layout-0-x-flexCol.vtex-flex-layout-0-x-flexCol--buy-button-two.vtex-flex-layout-0-x-flexCol--pdp-estructuraM.ml0.mr0.pl0.pr0.flex.flex-column.h-100.w-100 div.vtex-flex-layout-0-x-flexColChild.vtex-flex-layout-0-x-flexColChild--buy-button-two.vtex-flex-layout-0-x-flexColChild--pdp-estructuraM.pb0 > button.vtex-button.bw1.ba.fw5.v-mid.relative.pa0.lh-solid.br2.min-h-regular.t-action.bg-action-primary.b--action-primary.c-on-action-primary.hover-bg-action-primary.hover-b--action-primary.hover-c-on-action-primary.pointer.w-100",
             selectMothWithOut = "//*[@id=\"payment-group-custom203PaymentGroupPaymentGroup\"]",
             mensajeExito = "//h4[contains(text(),'Gracias por la compra')]",
@@ -121,6 +121,14 @@ public class ProductosPage extends BasePage {
     public void clickSimanPro() {
 
         clickElement(botonPRO);
+        scrollDouwnMin();
+        scrollDouwnMin();
+        scrollDouwnMin();
+        scrollDouwnMin();
+        scrollDouwnMin();
+        scrollDouwnMin();
+        scrollDouwnMin();
+        scrollDouwnMin();
     }
 
     public void clickPagoPorCuotas() {
@@ -198,7 +206,7 @@ public class ProductosPage extends BasePage {
     public void procederPagar(){
 
         try {
-            Thread.sleep(4000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -217,9 +225,7 @@ public class ProductosPage extends BasePage {
     }
 
     public void clickBuyProduct() {
-        for(int i = 0; i <= 10 ; i++){
-            scrollDouwnMin();
-        }
+
 
         clickElementByCSS(btnBuy);
     }
